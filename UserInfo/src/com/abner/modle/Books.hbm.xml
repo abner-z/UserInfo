@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-3 14:33:32 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.abner.modle.Books" table="BOOKS">
+        <id name="bookId" type="int">
+            <column name="book_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="bookName" type="java.lang.String">
+            <column name="book_name" />
+        </property>
+        <property name="bookAuthor" type="java.lang.String">
+            <column name="book_author" />
+        </property>
+        <property name="bookPublish" type="java.lang.String">
+            <column name="book_publish" />
+        </property>
+        <property name="bookDate" type="java.sql.Date">
+            <column name="book_date" />
+        </property>
+        <property name="bookIsbn" type="java.lang.String">
+            <column name="book_isbn" />
+        </property>
+        <property name="bookPrice" type="java.lang.String">
+            <column name="book_price" />
+        </property>
+        <property name="bookPage" type="java.lang.String">
+            <column name="book_page" />
+        </property>
+        <property name="bookContent" type="java.lang.String">
+            <column name="book_content" />
+        </property>
+    </class>
+</hibernate-mapping>
